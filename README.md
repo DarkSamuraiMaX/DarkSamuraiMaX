@@ -1,16 +1,15 @@
-## Hi there 👋
+DarkSamurai Portfolio Site (React + Vite + Tailwind + Framer Motion)
 
-<!--
-**DarkSamuraiMaX/DarkSamuraiMaX** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+How to run locally:
+1. npm install
+2. npm run dev
+3. Open http://localhost:5173
 
-Here are some ideas to get you started:
+Build:
+- npm run build
+The production build will be in the 'dist' folder.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Notes:
+- Replace /public/logo.png with your logo file to change the central logo.
+- Background image is at src/assets/bg.jpg.
+- Intro animation shows only on first visit (stored in sessionStorage).

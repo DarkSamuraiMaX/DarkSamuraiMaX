@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root{
+  --accent: #7c3aed;
+}
+
+body{
+  @apply bg-gray-900 text-gray-100;
+}
+
+#root{
+  min-height: 100vh;
+}
+
+.backdrop-blur-sm{
+  backdrop-filter: blur(6px);
+}
+
+/* Ensure the fixed background shows on sides */
+body::before{
+#parallax-bg {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: background-position 0.2s ease-out;
+}
+
+#parallax-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.0);
+  pointer-events: none;
+}	
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(124,58,237,0.12), transparent 40%), linear-gradient(90deg, rgba(10,20,30,0.6), rgba(4,6,8,0.6));
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* СТИЛИ СКРОЛЛБАРА ДЛЯ ГАЛЕРЕЙ */
+.gallery-scroll {
+  padding-top: 2px;
+  padding-bottom: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.gallery-scroll::-webkit-scrollbar {
+  height: 10px; /* высота горизонтального скролла */
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: rgba(20, 20, 35, 0.7); /* цвет фона */
+  border-radius: 5px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #000B4F, #122382); /* градиент */
+  border-radius: 5px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #1A3BA5, #255DCE);
+}
